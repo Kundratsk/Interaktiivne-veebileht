@@ -10,6 +10,7 @@ function addTask() {
 
   const removeBtn = document.createElement("button"); // loob nuppu ülesande eemaldamiseks
   removeBtn.textContent = "❌"; // määrab nupu tekstiks rist
+  removeBtn.className = "remove-btn"; // lisa CSS klass nupule, et saaks stiilida
   removeBtn.onclick = () => li.remove(); // kui nuppu klikitakse, eemaldatakse see li element
 
   li.appendChild(removeBtn); // lisab nupu li elemendi sisse
