@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Interaktiivne Veebileht</title>
+ 
+</head>
+<body>
+
+<h1>Interaktiivne Veebileht</h1>
+
+<div class="container">
+
+  <!-- TO-DO LIST -->
+  <section>
+    <h2>📝 To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Sisesta ülesanne">
+    <button onclick="addTask()">Lisa</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- KALKULAATOR -->
+  <section>
+    <h2>🧮 Kalkulaator</h2>
+    <input type="number" id="num1" placeholder="Esimene number">
+    <input type="number" id="num2" placeholder="Teine number">
+    
+    <select id="operation">
+      <option value="+">Liitmine (+)</option>
+      <option value="-">Lahutamine (-)</option>
+      <option value="*">Korrutamine (*)</option>
+      <option value="/">Jagamine (/)</option>
+    </select>
+
+    <button onclick="calculate()">Arvuta</button>
+    <div class="result" id="calcResult"></div>
+  </section>
+
+  <!-- VORMI VALIDEERIMINE -->
+  <section>
+    <h2>📋 Registreerimisvorm</h2>
+    <input type="text" id="name" placeholder="Nimi">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="validateForm()">Saada</button>
+    <div class="error" id="formError"></div>
+  </section>
+
+</div>
+
+<script src="calc.js"></script>
+
+</body>
+</html>
